@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/black.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color:  #3d2c2e;
+            overflow-y: auto;
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background-color: #8e4162;  
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        header a:hover {
+            color: #faf3f3;
+            transform: scale(1.1);
+        }
+
+        .section {
+            margin: 120px 20px 60px 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Verdana', sans-serif;
+            font-size: 40px;
+            color:  #8e4162;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h3 {
+            font-size: 25px;
+            color:  #8e4162;
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .hobby-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+            background-color:  #ffbcd9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .hobby-box img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+            object-fit: cover;
+        }
+
+        .music-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .music-item {
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            background-color: #ffbcd9;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .music-item h4 {
+            font-size: 18px;
+            color: #8e4162;
+        }
+
+        .music-item audio {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px auto;
+            display: block;
+            border: 2px solid  #8e4162;
+            border-radius: 10px;
+        }
+.sunset-box {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+            background-color:  #ffbcd9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+       
+
+        .sunset-gallery img {
+            width: 100%;
+            max-width: 290px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #8e4162;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="ass2.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="gallery1.html">Gallery</a>
+        <a href="contactme.html">Contact Me</a>
+    </header>
+
+    <div class="section">
+        <h2>My Hobbies</h2>
+
+         
+        <div class="hobby-box">
+            <div>
+                <h3>Reading Books</h3>
+                 
+            <img src="images/book.jpg" alt="Reading Books">
+        </div>
+</div>
+        
+        <div class="hobby-box">
+            <div>
+                <h3>Writing Poems & Journals</h3>
+                 
+            <img src="images/medium.jpg" alt="Writing Poems">
+        </div>
+</div>
+        
+        <h3>Listening to Music</h3>
+         
+        <div class="music-list">
+            <div class="music-item">
+                <h4>Wildflower - Billie Eilish</h4>
+                <audio controls>
+                    <source src="images/ws14.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="music-item">
+                <h4>Sailor Song - Gigi Perez</h4>
+                <audio controls>
+                    <source src="images/sailor.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="music-item">
+                <h4>The Greatest - Billie Eilish</h4>
+                <audio controls>
+                    <source src="images/thegreatest.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+             
+            </div>
+        </div>
+
+         
+        <div class="sunset-gallery">
+            <div>
+                <h3>Sunset Photography</h3>
+                 
+            </div>
+            <img src="images/ws43.jpg" alt="Sunset 1">
+            <img src="images/ws41.jpg" alt="Sunset 2">
+            <img src="images/ws44.jpg" alt="Sunset 3">
+<img src="images/ws42.jpg" alt="Sunset 3">
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Nur Amierah Aizah. All rights reserved.
+    </footer>
+
+</body>
+</html>. 

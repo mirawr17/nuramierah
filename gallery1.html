@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffbcd9;
+            color: #333;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background-color: #8e4162;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        header a:hover {
+            color: #faf3f3;
+            transform: scale(1.1);
+        }
+
+        .container {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        .section {
+            margin: 20px 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Verdana', sans-serif;
+            font-size: 36px;
+            color: #8e4162;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .gallery-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffbcd9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .gallery-item {
+            width: 280px;
+            margin: 15px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #8e4162;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #8e4162;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            font-size: 18px;
+            z-index: 100;
+        }
+
+        .scroll-top.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+          <a href="ass2.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="gallery1.html">Gallery</a>
+        <a href="contactme.html">Contact Me</a>
+
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Gallery</h2>
+
+         
+            <div class="gallery-box">
+                <h3>Family Photos</h3>
+                <div class="gallery-item">
+                    <img src="images/ws47.jpg" alt="Family 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ws52.jpg" alt="Family 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ws30.jpg" alt="Family 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ws32.jpg" alt="Family 4">
+                </div>
+                 
+<div class="gallery-item">
+                    <img src="images/ws70.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws73.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws75.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws71.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws72.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws77.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws103.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws34.jpg" alt="Family 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws39.jpg" alt="Family 5">
+                </div>
+
+
+
+            </div>
+
+            
+            <div class="gallery-box">
+                <h3>Friends Photos</h3>
+                <div class="gallery-item">
+                    <img src="images/ws2.jpg" alt="Friend 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ws6.jpg" alt="Friend 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ws7.jpg" alt="Friend 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ws10.jpg" alt="Friend 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ws54.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws37.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws38.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws40.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws53.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws83.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws76.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws46.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws50.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws51.jpg" alt="Friend 5">
+                </div>
+ <div class="gallery-item">
+                    <img src="images/ws49.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws3.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws36.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws11.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws9.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws81.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws8.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws31.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws112.jpg" alt="Friend 5">
+                </div>
+<div class="gallery-item">
+                    <img src="images/ws4.jpg" alt="Friend 5">
+                </div>
+
+            </div>
+  
+</div>
+           
+            <div class="gallery-box">
+                <h3>Videos</h3>
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="images/ws60.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="images/ws80.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Nur Amierah Aizah | All Rights Reserved
+    </footer>
+
+    <div class="scroll-top" id="scroll-top-btn">↑</div>
+
+    <script>
+         
+        window.onscroll = function() {
+            var scrollTopBtn = document.getElementById("scroll-top-btn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        };
+
+         
+        document.getElementById("scroll-top-btn").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+ <div class="music-item">
+                <h4>Wildflower - Billie Eilish</h4>
+               <audio id="mira" controls autoplay>
+ <source src="images/photograph.mp3"    type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+
+            </div>
+
+
+</div>
+
+<script>
+console.log("hi");
+
+  document.getElementById("mira").autoplay;
+var x = document.getElementById("mira").autoplay;
+console.log(x);
+
+
+
+
+    </script>
+
+</body>
+</html>
+

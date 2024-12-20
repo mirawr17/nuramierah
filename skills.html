@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/ws43.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #3d2c2e;
+            overflow-y: auto;
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            background-color: #8e4162;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        header a:hover {
+            color: #faf3f3;
+            transform: scale(1.1);
+        }
+
+        .section {
+            margin: 120px 20px 60px 20px; 
+            padding: 20px;
+            background: #f8d7e0; /* Soft pink color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #8e4162;
+        }
+
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #8e4162;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #8e4162;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+         
+        .soft-skills, .hard-skills {
+            margin-bottom: 30px;  
+        }
+
+        .gap {
+            height: 20px;
+            background-color: black;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="ass2.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="gallery1.html">Gallery</a>
+        <a href="contactme.html">Contact Me</a>
+    </header>
+
+    <div class="section">
+        <h2>My Skills</h2>
+
+         
+        <div class="soft-skills">
+            <h3>Soft Skills</h3>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Communication</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Teamwork</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Problem Solving</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Adaptability</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership</td>
+                        <td>Basic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="gap"></div>
+
+        
+        <div class="hard-skills">
+            <h3>Hard Skills</h3>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Proficiency Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>HTML & CSS</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Photoshop</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Canva</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Content Management</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Graphic Design</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Video Editing</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>SEO Optimization</td>
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media Management</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Nur Amierah Aizah. All rights reserved.
+    </footer>
+</body>
+</html>
+
